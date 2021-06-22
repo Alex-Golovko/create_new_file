@@ -19,7 +19,7 @@ def get_size_doc(file_name):
 
 def create_new_file(name_file):
     with open(f'{name_file}', 'w+', encoding='utf-8') as file:
-       file.write(f'{name_file}')
+       file.write('')
 
 create_new_file('New File.txt')
 
@@ -36,5 +36,6 @@ def write_new_file(file):
             second.write(f'{list_key[i+1]}\n')
             second.write(f'{list_value[i+1]}\n')
             second.write(f'{data}\n')
+            second.write('\n')
 
 write_new_file(create_new_file('New File.txt'))
